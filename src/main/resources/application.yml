@@ -15,11 +15,11 @@ spring:
       ddl-auto: update
     show-sql: true
 
+  profiles:
+    active: dev
 logging:
   level:
     org.hibernate.orm.jdbc.bind: TRACE
     org.hibernate.orm.jdbc.extract: TRACE
     org.springframework.transaction.interceptor: TRACE
 
-  profiles:
-    active: dev
