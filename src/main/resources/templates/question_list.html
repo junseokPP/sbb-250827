@@ -5,6 +5,13 @@
     <title>Title</title>
 </head>
 <body>
+
+<div th:text="${value}"></div>
+<ul>
+    <li th:each="num : ${list}" th:text="${num}"></li>
+</ul>
+
+
 <ul>
     <li>질문1</li>
     <li>질문1</li>
