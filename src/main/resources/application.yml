@@ -1,9 +1,14 @@
 spring:
   application:
     name: sbb
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
   output:
     ansi:
       enabled: always
+  profiles:
+    active: dev
 
   jpa:
     properties:
@@ -15,8 +20,7 @@ spring:
       ddl-auto: update
     show-sql: true
 
-  profiles:
-    active: dev
+
 logging:
   level:
     org.hibernate.orm.jdbc.bind: TRACE
